@@ -4,17 +4,29 @@
 
 .calculator-container {
     display: grid;
+    width:30%;
+    height: 350px;
+    gap:1px;
+   column-gap: 2px;
+    background-color: black;
     grid-template-areas: 'screen screen screen screen'
         'clear clear backspace divide'
         'seven eight nine multiply'
-        'four fve six minus'
+        'four five six minus'
         'one two three plus'
         'zero zero zero equal';
 }
 
 /*calculator grid buttons*/
+.number{
+ background-color:#d8d9db
+}
+.opeartor{
+    background-color: #df974c;
+}
 .screen {
     grid-area: screen;
+    background-color: black;
 }
 
 .clear {
