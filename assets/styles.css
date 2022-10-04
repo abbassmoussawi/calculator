@@ -5,10 +5,10 @@
 .calculator-container {
     margin: auto;
     display: grid;
-    width:30%;
+    width: 30%;
     height: 350px;
-    gap:1px;
-   column-gap: 2px;
+    gap: 1px;
+    column-gap: 2px;
     background-color: black;
     grid-template-areas: 'screen screen screen screen'
         'clear clear backspace divide'
@@ -19,21 +19,29 @@
 }
 
 /*calculator grid buttons*/
-.number{
- background-color:#d8d9db;
- border-color:#d8d9db;
- border-radius: 1px;
+.button{
+
 }
-.opeartor{
-    color:white;
-    background-color: #df974c;
-    border-color:#df974c ;
-    
+.number {
+    background-color: #d8d9db;
+    border-color: #d8d9db;
     border-radius: 1px;
 }
+
+.opeartor {
+    color: white;
+    background-color: #df974c;
+    border-color: #df974c;
+    border-radius: 1px;
+}
+
 .screen {
     grid-area: screen;
-    background-color: black;
+    color: white;
+    font-size: 40px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: right;
+   
 }
 
 .clear {
