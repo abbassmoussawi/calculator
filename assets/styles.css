@@ -5,11 +5,10 @@
 .calculator-container {
     margin: auto;
     display: grid;
-    width: 30%;
+    width: 250px;
     height: 350px;
     gap: 1px;
     column-gap: 2px;
-    background-color: black;
     grid-template-areas: 'screen screen screen screen'
         'clear clear backspace divide'
         'seven eight nine multiply'
@@ -20,30 +19,32 @@
 
 /*calculator grid buttons*/
 .button{
-
+    cursor: pointer;
 }
 .number {
     background-color: #d8d9db;
     border-color: #d8d9db;
     border-radius: 1px;
 }
-
-.opeartor {
+/* Buttons(+ / -..)*/
+.arithmeticOperator {
     color: white;
     background-color: #df974c;
     border-color: #df974c;
     border-radius: 1px;
 }
-
 .screen {
     grid-area: screen;
     color: white;
+    background-color: black;
     font-size: 40px;
+    height:50px;
+    width:260px;
+    margin-bottom: -40px;
     font-family: "Courier New", Courier, monospace;
-    text-align: right;
-   
+    text-align: right;   
 }
-
+/* class name of each button*/
 .clear {
     grid-area: clear;
 }
